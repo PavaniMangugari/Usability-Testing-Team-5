@@ -48,7 +48,7 @@
       <!-- Single Product -->
       <div class="col-md-6 col-lg-4 col-xl-3" *ngFor="let category of categories" style="border:groove; border-radius: 4%; margin: 1%; box-shadow: 0 0.5rem 1.2rem rgb(0 0 0 / 20%) ">
         <div id="product-1" class="single-product">
-          <div class="part-1" style="background-size: cover; transition: all 0.3s;" [ngStyle]="{'background': getStyles(category.name),'height':'
+          <div class="part-1" (click)="goToProductDetails(category.categoryId)"  style="background-size: cover; transition: all 0.3s;" [ngStyle]="{'background': getStyles(category.name),'height':'
           800px','background-size': '100% 100%',    'background-color': 'gainsboro',
     'margin': '-1% -5% 10% -5%',
     'border-radius': '4% 4% 0% 0%'}">
