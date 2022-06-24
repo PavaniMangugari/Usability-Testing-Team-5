@@ -21,8 +21,8 @@
     text-align: center;
   }
 
-  
-  /* mat-expansion-panel
+  mat-expansion-panel
   {
-    background-color:blanchedalmond
-  } */
+      width:50%;
+    margin-left: 5vw;
+  }
