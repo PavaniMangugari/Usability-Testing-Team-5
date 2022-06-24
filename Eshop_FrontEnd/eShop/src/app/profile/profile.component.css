@@ -1,13 +1,11 @@
-mat-card,mat-form-field,input
-{
-    width: 50vw;
-}
-mat-form-field,h2
-{
-    margin: 1%;
-    padding: 1%;
-}
-mat-card
-{
+
+mat-card{
+    width: fit-content;
     margin: 5%;
+    /* background-color: azure; */
+}
+.example-container
+{
+    width: 30vw;
+    margin: 10%;
 }
