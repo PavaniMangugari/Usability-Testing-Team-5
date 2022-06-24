@@ -108,7 +108,7 @@ fxLayoutGap.gt-md="50px" fxLayoutAlign="space-around center">
           
 
           <mat-form-field  appearance="fill">
-            <input matInput type="password" formControlName="password" required placeholder="Password"  minlength="6" maxlength="16">
+            <input matInput type="password" formControlName="password" required placeholder="Password"  minlength="8" maxlength="16">
             <mat-error *ngIf="this.registrationForm.controls['password'].hasError('required')">Password is
                 required</mat-error>
             <mat-error *ngIf="this.registrationForm.controls['password'].hasError('minlength')">Password should
@@ -119,7 +119,7 @@ fxLayoutGap.gt-md="50px" fxLayoutAlign="space-around center">
           </mat-form-field>
 
           <mat-form-field   appearance="fill">
-            <input matInput type="password" formControlName="repassword" required placeholder="Confirm Password"  minlength="6" maxlength="16">
+            <input matInput type="password" formControlName="repassword" required placeholder="Confirm Password"  minlength="8" maxlength="16">
             <mat-error *ngIf="this.registrationForm.controls['repassword'].hasError('required')">Renter the password</mat-error>
              <mat-icon matSuffix>lock</mat-icon>
           </mat-form-field>

@@ -14,12 +14,10 @@
                   <mat-icon matSuffix>email</mat-icon>
                 </mat-form-field>
                 <mat-form-field>
-                  <input matInput type ="password" formControlName="password" required placeholder="Password"  minlength="6" maxlength="50">
+                  <input matInput type ="password" formControlName="password" required placeholder="Password"  minlength="8" maxlength="16">
                   <mat-error *ngIf="this.loginForm.controls['password'].hasError('required')">password is required</mat-error>
-                      <mat-error
-                      *ngIf="this.loginForm.controls['password'].hasError('required')">
-                      Password must be of length 6
-                    </mat-error>
+                  <mat-error *ngIf="this.loginForm.controls['password'].hasError('minlength')">Password should
+                    be between 8-16 characters</mat-error>
                   <mat-icon matSuffix>lock</mat-icon>    
                 </mat-form-field>              
                 <button mat-raised-button color="primary" class="login-button">Log In</button>  
