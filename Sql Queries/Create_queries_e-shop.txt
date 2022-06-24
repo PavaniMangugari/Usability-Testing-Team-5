@@ -1,0 +1,232 @@
+
+
+CREATE TABLE user (
+   email_id varchar(255) not null,
+    last_name varchar(255) not null,
+    password varchar(255) not null,
+    first_name varchar(255) not null,
+    phone_number varchar(200) not null,
+    primary key(email_id)
+);
+
+
+
+
+CREATE TABLE category (
+    category_id integer(11) not null AUTO_INCREMENT,
+  name varchar(200) not null,
+  description varchar(255),
+    primary key(category_id)
+);
+
+
+
+CREATE TABLE product (
+    product_id integer(11) not null AUTO_INCREMENT,
+    category_id integer(11) not null,
+  product_name varchar(200) not null,
+  product_description varchar(255),
+  product_original_price integer(11) not null,
+product_price integer(11) not null,
+product_rating integer(11) not null,
+  product_image varchar(200),
+  product_color varchar(100),
+  primary key(product_id),
+  FOREIGN KEY (category_id) REFERENCES category(category_id)
+  );
+
+
+
+CREATE TABLE product_cart (
+    cart_id integer(11) not null ,
+ email_id varchar(255) not null,
+  primary key(cart_id,email_id),
+  FOREIGN KEY (email_id) REFERENCES user(email_id)
+  );
+
+
+
+CREATE TABLE product_wishList (
+    wishlist_id integer(11) not null ,
+ email_id varchar(255) not null,
+   primary key(wishlist_id),
+  FOREIGN KEY (email_id) REFERENCES user(email_id)
+  );
+
+
+
+CREATE TABLE vendor( 
+	vendor_id integer(11) not null,
+	vendor_name varchar(200) not null,
+	product_id integer(11) not null,
+	primary key(vendor_id),
+	foreign key(product_id) REFERENCES product(product_id)
+);
+
+
+
+CREATE TABLE cart_items(
+ cart_id integer(11) not null,
+ product_id integer(11) not null,
+count integer(11) not null,
+price integer(11) not null,
+primary key(cart_id,product_id),
+foreign key(product_id) REFERENCES product(product_id),
+foreign key(cart_id) REFERENCES product_cart(cart_id )
+);
+
+
+
+
+CREATE TABLE wishlist_items(
+ wishlist_id integer(11) not null ,
+    product_id integer(11) not null,
+  product_type varchar(200) not null,
+ primary key(wishlist_id,product_id),
+  FOREIGN KEY (wishlist_id) REFERENCES product_wishList(wishlist_id),
+   FOREIGN KEY (product_id) REFERENCES product(product_id)
+);
+
+
+
+CREATE TABLE order_user (
+order_id integer(11) not null AUTO_INCREMENT,
+email_id varchar(200) not null,
+order_Date DATE not null,
+order_status varchar(200) not null,
+ primary key(order_id),
+ FOREIGN KEY (email_id) REFERENCES user(email_id)
+);
+
+
+
+CREATE TABLE order_details(
+order_id integer(11) not null,
+product_id integer(11) not null,
+estimated_delivery_date DATE not null,
+ primary key(order_id,product_id),
+ FOREIGN KEY (product_id) REFERENCES product(product_id)
+);
+
+
+
+CREATE TABLE payment_details(
+payment_id integer(11) not null AUTO_INCREMENT,
+order_id integer(11) not null,
+payment_type varchar(100) not null,
+payment_value varchar(100) not null,
+ primary key(payment_id),
+ FOREIGN KEY (order_id) REFERENCES order_user(order_id)
+);
+
+
+
+CREATE TABLE refund_history(
+order_id integer(11) not null,
+product_id integer(11) not null,
+refund_amount integer(11) not null,
+primary key(order_id,product_id),
+FOREIGN KEY (product_id) REFERENCES product(product_id)
+);
+
+
+
+CREATE TABLE deals(
+deal_id integer(11) not null,
+deal_type varchar(200) not null,
+expiry_date date not null,
+primary key(deal_id)
+);
+
+
+CREATE TABLE deal_items(
+deal_id integer(11) not null,
+product_id integer(11) not null,
+primary key(deal_id,product_id),
+FOREIGN KEY (deal_id) REFERENCES deals(deal_id),
+FOREIGN KEY (product_id) REFERENCES product(product_id)
+);
+
+
+
+CREATE TABLE customer_history(
+email_id varchar(255) not null,
+order_id integer(11) not null,
+primary key (email_id, order_id),
+FOREIGN KEY (order_id) REFERENCES order_user(order_id)
+);
+
+
+
+CREATE TABLE cancel_orders(
+order_id integer(11) not null,
+canceled_date Date not null,
+Primary key (order_id),
+FOREIGN KEY (order_id) REFERENCES order_user(order_id)
+);
+
+
+
+CREATE TABLE return_orders(
+order_id integer(11) not null,
+Pickedup_not bit not null,
+Reason varchar(500),
+Primary key (order_id),
+FOREIGN KEY (order_id) REFERENCES order_user(order_id)
+);
+
+
+CREATE TABLE shippingaddress(
+ email_id varchar(255) not null,
+house_number varchar(255),
+   street_name varchar(255),
+    pin_code int(11),
+    primary key(email_id),
+FOREIGN KEY email_id REFERENCES user(email_id )
+);
+
+
+
+CREATE TABLE city_details(
+    city varchar(255),
+    state varchar(255),
+    pin_code int(11),
+    primary key(pin_code)
+);
+
+
+CREATE TABLE reward_info(
+reward_id integer(11) not null,
+amount_reward integer(11) not null,
+expiry_date date not null,
+primary key( reward_id)
+
+);
+
+
+CREATE TABLE user_rewards(
+email_id varchar(255) not null,
+reward_id integer(11) not null,
+primary key(email_id, reward_id),
+FOREIGN KEY (email_id ) REFERENCES user(email_id),
+FOREIGN KEY (reward_id) REFERENCES reward_info(reward_id)
+);
+
+
+
+CREATE TABLE coupons(
+coupon_id varchar(200) not null,
+valid_start_date date not null,
+valid_end_date date not null,
+coupon_amount integer(11) not null,
+primary key(coupon_id)
+);
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 

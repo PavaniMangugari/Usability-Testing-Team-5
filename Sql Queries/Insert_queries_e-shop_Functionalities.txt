@@ -1,0 +1,51 @@
+
+ Insert into user(email_id,last_name,password,first_name,phone_number)values('projectDemo@gmail.com','Demo','demo123','Project',6459025367);
+
+ Insert into user(email_id,last_name,password,first_name,phone_number)values('DemoData@gmail.com','Data','demo123','Demo',783935474827);
+
+ Insert into shippingaddress(email_id,house_number,street_name,pin_code)values('DemoData@gmail.com','321','locus street',505001);
+
+ Insert into shippingaddress(email_id,house_number,street_name,pin_code)values('projectDemo@gmail.com','421','marcus street',505010);
+
+Insert into city_details(city,state,pin_code)values('venus','turtin',505001);
+Insert into city_details(city,state,pin_code)values('cargo','Texas',505010);
+
+Insert into product_wishlist(email_id,wishlist_id)values('projectDemo@gmail.com',4);
+Insert into product_wishlist(email_id,wishlist_id)values('DemoData@gmail.com',5);
+
+Insert into wishlist_items(wishlist_id,product_id,product_type)values(4,112,'shirt');
+Insert into wishlist_items(wishlist_id,product_id,product_type)values(5,113,'shirt');
+
+ Insert into product_cart(cart_id,email_id)values(5,'projectDemo@gmail.com');
+ Insert into product_cart(cart_id,email_id)values(6,'DemoData@gmail.com');
+
+Insert into cart_items(cart_id,product_id,count,price)values(5,111,1,95);
+Insert into cart_items(cart_id,product_id,count,price)values(5,134,2,2000);
+
+Insert into order_user(order_id,email_id,order_Date,order_status)values(6,'projectDemo@gmail.com','2022-04-29','ACTIVE');
+Insert into order_details(order_id,product_id,estimated_delivery_date)values(6,112,'2022-05-05');
+
+Insert into order_user(order_id,email_id,order_Date,order_status)values(7,'DemoData@gmail.com','2022-04-29','ACTIVE');
+Insert into order_details(order_id,product_id,estimated_delivery_date)values(7,112,'2022-05-05');
+
+ Insert into customer_history(email_id,order_id)values('projectDemo@gmail.com',6);
+ Insert into payment_details(payment_id,order_id,payment_type,payment_value)values(4,6,'card',1123);
+
+ Insert into customer_history(email_id,order_id)values('DemoData@gmail.com',7);
+ Insert into payment_details(payment_id,order_id,payment_type,payment_value)values(5,7,'card',1123);
+
+Insert into cancel_orders(order_id,canceled_date)values(6,'2022-04-29');
+update order_user set order_status='Failed' where order_id=6;
+
+Insert into refund_history(order_id,product_id,refund_amount)values(6,112,1123);
+
+Insert into return_orders(order_id,pickedup_not,Reason)values(7,1,'Testing to return the orders');
+update order_user set order_status='RETURN' where order_id=7;
+
+update city_details set city='denton c' where pin_code=505010;
+update shippingaddress set house_number='654' where email_id='DemoData@gmail.com';
+
+
+ 
+ 
+ 

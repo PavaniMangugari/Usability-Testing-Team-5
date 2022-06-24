@@ -1,0 +1,713 @@
+
+ Insert into category (
+    category_id,
+  name ,
+  description
+) values ("1","Clothes","Pick the out fits that fits you");
+
+Insert into category (
+    category_id,
+  name,
+  description
+) values ("2","Electronics","Pick the best item you desire to buy");
+
+Insert into category (
+    category_id,
+  name,
+  description
+) values ("3","Footware","Have the best walk");
+
+Insert into category (
+    category_id,
+  name,
+  description
+) values ("4","BeautyProducts","Skincare is essential. Makeup is a choice");
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ ) values ("123","1","Stretch Oxford Shirt","A comfortable button-down shirt in soft, stretch Oxford fabric,
+ featuring
+ an embroidered logo icon. Curved hem. Muscle Fit. Imported.","145","90","4.5","Stretch Oxford _White.png","White");
+ 
+ 
+ 
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ )  values ("124","1","VanHuissain_blue Shirt","A subtly sophisticated look, with a point collar,
+ French placket and chest pocket. Single-button cuff, round hem.","150","95","4.0","VanHuissain_blue.png","Blue");
+
+
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ )  values ("125","1","Hollister TWILL JUMPSUIT","This full-length twill jumpsuit features a slim waist with corset-style
+ seam details and wide legs. Imported.","120","95","3.0","Hollister_Olive.png","Olive");
+
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ )  values ("126","1","Hollister T-Shirt","A subtly sophisticated look, with a point collar,
+ French placket and chest pocket. Single-button cuff, round hem.","120","105","3.5","Hollister_Black To Turquoise Ombre.png","Blue");
+
+
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color) values ("131","2","Google_Pixel6Pro_Phone ", "Introducing Pixel 6 Pro, the completely redesigned, fully loaded Google phone. 
+With the Pixel 6 Pro Camera system, next-gen security, and Tensor, its the smartest and fastest pixel yet","745","700","4.5","Google_Pixel6ProSortaSunny.jpg" , 
+"Sorta Sunny");
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color) values ("132","2","Sony Xperia Pro-I_Phone", "The Xperia PRO-I features a genuine 1-inch sensor, enabling you to capture
+ photos and videos with exceptional imaging quality. The large sensor is supported by Sony's original image signal processor.",
+1500,1000,5, "SonyXperiaPro-I_FrostedBlack.jpg" , 
+"Frosted Black");
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color) values ("133","2","Xiaomi Redmi Note 11_Phone ", "The Xiaomi Redmi Note 11 is a basic Android phone with one stand-out feature – a Full HD OLED screen. This is great for watching YouTube or Netflix in a darker room, letting the ultra-deep contrast of the tech shine",950,900,4,"XiaomiRedmiNote11PearlWhite.jpg" , 
+"Pearl White");
+
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color) values ("134","2","Apple iPhone 13 pro max ", "Apple's iPhone 13 features a ceramic shield front, Super 
+Retina XDR display with True Tone and an A15 Bionic chip. The first design change users will notice is the smaller notch.",1400,1000,3, 
+"iPhone13-pro-SierraBlue.jpg" , 
+"Sierra Blue" );
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color) values ("135","2","OnePlus 10 Pro_Phone ", "The OnePlus 10 Pro features a Snapdragon 8 Gen 1 processor, Qualcomm's latest and 
+greatest processor for Android phones. With 8GB of RAM, it has plenty of power for common tasks like watching videos, editing photos,
+ or playing games.",1200,800,4,"OnePlus10-Pro-VolcanicBlack.jpg","VolcanicBlack");
+
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ )  values ("136","2","Samsung Galaxy S22 Ultra phone","next gen","780","720","4.5","Samsung Galaxy S22 Ultra_blue.png","Blue");
+
+
+
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ )  values ("141","2","BRAVIA XR X95K 4K HDR Mini LED TV","XR Surround virtually creates surround sound
+ from the sides and vertically using just the TV speakers, so you can experience 3D audio without the need
+ for in-ceiling or up-firing speakers. Our BRAVIA XR™ TVs are also compatible with Dolby Atmos","560","520","4.5",
+"Sony.png","Black");
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ )  values ("142","2","LG OLED55C1PUB_TV","LG OLED TV is a joy to behold. Self-lit pixels have evolved to allow even more spectacular
+ picture quality. ","560","520","4.5",
+"LG.png","Black");
+
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ )  values ("143","2","Samsung QN32Q60AA_TV","Samsung QLED TV is a joy to behold. Self-lit pixels have evolved to allow even more spectacular
+ picture quality.","560","520","4.5",
+"Samsung.png","Black");
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ )  values ("144","2","Vizio P-Series Q9-J01 65_TV","SFeel the power of the extraordinary new P-Series 4K HDR Smart TV.
+ The P-Series is our most colorful TV with the spectacular Quantum Color engine generating up to 115% more color in every pixel than standard","560","520","4.5",
+"Vizio.png","Black");
+
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ )  values ("145","2","Furrion 65_TV","watching the big game, experience year-round outdoor entertainment in any climate. Resistant to extreme
+ temperatures","560","520","4.5",
+"Furrion.png","Black");
+
+
+
+
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ ) values ("151","2","Microsoft Surface Laptop 4","Intel Core i7 (11th Gen) i7-1185G7 Quad-core 3 GHz
+ - 32 GB RAM - 1 TB SSD - Matte Black - Windows 10 Home - Intel Iris Xe Graphics - PixelSense - 16.50 Hour
+ Battery","2799","2200","5.0","Microsoft Surface Laptop 4.png","Matte Black");
+
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ ) values ("152","2","Dell Inspiron 3511_Laptop","Dell laptop with a 15.6 screen (1920 x 1080) offers crisp, vivid images from games, 
+shows and website","1399","990","4.0","Dell Inspiron 3511.png","Black");
+
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ ) values ("153","2","Asus ZenBook Flip 13_Laptop","Asus ZenBook Flip 13 is 360° ErgoLift hinge on ZenBook Flip 13 has a silky-smooth, 
+stepless action that holds the display securely at any angle
+","2599","2000","3.5","Asus ZenBook Flip 13 .png","Pine Gray");
+
+
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ ) values ("154","2","Lenovo ThinkPad X1 Carbon 8th Gen_Laptop","Ultrabook - 4K UHD - 3840 x 2160 - Intel Core i7 i7-10610U
+ Quad-core 1.80 GHz - 16 GB RAM - 1 TB SSD - Black - Windows 10 Pro - Intel UHD Graphics","1399","1000","3.0","Lenovo ThinkPad X1 Carbon 8th Gen.png",
+"Silver");
+
+ Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ )  values ("161","2","LG_AC_LAN120HSV5_AC","LG Air Conditioning Technologies offers the homeowner the comfort
+ and convenience for year-round residential and light commercial heating and cooling needs and can Feel the breeze","700",
+"750","5","LG_AC_LAN120HSV5.png","Black");
+
+
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ )  values ("191","2","Philips Straightner","New and in original packaging with 2 years warranty - Since over 40 years limited 
+line retailer for consumer electronics, home appliances and multimedia in Frankfurt, Germany","210","170","4.5","Philips.png","Silver");
+
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ )  values ("192","4","Lotus Herbals Sunscreen","Safe Sun UV Screen MatteGEL SPF 50 protects from 98% of the harmful UV rays.",
+"95","70","4.5","Lotus.png","Orange"); 
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ )  values ("193","4","Dove Body Wash","Dove Body Wash with Pump with Skin Natural Nourishers for Instantly Soft Skin and Lasting Nourishment
+ Deep Moisture Cleanser That Effectively Washes Away Bacteria While Nourishing Your Skin","9","8","4.5","Dove.png","White");
+
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ )  values ("194","4"," Clinique Moistorizing Cream","New auto-replenishing technology with activated aloe water actually helps skin create its own internal water source to continually rehydrate itself.
+ It then locks in all that moisture for an endlessly plump, dewy, healthy-looking glow","55","50","4.5"," Clinique Moistorizing Cream.png","White");
+
+
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ )  values ("111","3","Nike Air Vapormax Plus Shoes","Nike VaporMax Air technology provides ultra-lightweight
+ cushioning where you need it for optimal flexibility and comfort.","120","95","4.5","Nike Air Vapormax Plus_White/Mint Foam/Washed.png","White/Mint Foam/Washed"); 
+
+
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ )  values ("112","3","Puma_Cool Cat Men's sliders","Slip on. Slip off. Featuring a 
+lightweight EVA outsole and textured foot bed with padded strap for optimal comfort.","85","75","4","Puma_Peacoat.png","Peacoat");
+
+
+Insert into Product (
+    product_id,
+    category_id,
+  product_name,
+  product_description,
+  product_original_price,
+product_price,
+product_rating,
+  product_image,
+  product_color
+ )  values ("113","3","Skechers Sandals","Sweeten your look with an extra step of comfort in Skechers Arch Fit® Beverlee - Juliet. This ankle strap slide wedge sandal features
+ a woven linen and stretch fabric upper with a knotted detail and supportive Arch Fit® footbed.","125","110","5","Skechers Natural_Black.png","Natural");
+
+
+ 
+ 
+ 
+
+Insert into deals (
+    deal_id,
+    deal_type,
+  expiry_date
+ )  values ("11","Clearance Sale","2022-06-15");
+
+
+
+Insert into deals (
+    deal_id,
+    deal_type,
+  expiry_date
+ )  values ("22","30% off Sale","2022-07-05");
+
+Insert into deals (
+    deal_id,
+    deal_type,
+  expiry_date
+ )  values ("33","50% off Sale","2022-08-25");
+ 
+ 
+ 
+Insert into deal_items (
+    deal_id,
+    product_id
+ )  values ("11","135");
+
+
+
+Insert into deal_items (
+    deal_id,
+    product_id
+ )  values ("22","191");
+
+Insert into deal_items (
+    deal_id,
+    product_id
+ )  values ("22","194");
+
+Insert into deal_items (
+    deal_id,
+    product_id
+ )  values ("33","111");
+
+Insert into deal_items (
+    deal_id,
+    product_id
+ )  values ("33","161");
+
+
+
+
+
+
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id 
+
+)values 
+	(01 ,
+	"VanHuissain",
+	123 
+	
+);
+
+
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id 
+)values( 
+	02 ,
+	"Hollister" ,
+	125 
+	
+);
+
+
+
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id 
+) values
+	(03 ,
+	"Google_Pixel",
+	131 
+	
+);
+
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id  
+) values(
+	05,
+	"Sony" ,
+	132 
+	 
+);
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id 
+) values(
+
+	06 ,
+	"Xiaomi" ,
+	133
+);
+
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id  
+) values(
+	07,
+	"Apple" ,
+	134 
+);
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id 
+) values(
+	08 ,
+	"OnePlus",
+	135 
+);
+
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id 
+) values( 
+	09 ,
+	"Samsung",
+	136 
+);
+
+
+
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id  
+) values( 
+	010 ,
+	"L.G" ,
+	142 
+);
+
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id  
+) values(
+	011,
+	"Vizio",
+	144 
+);
+
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id 
+) values(
+	012 ,
+	"Furrion" ,
+	145 
+);
+
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id  
+) values(
+	013 ,
+	"Microsoft" ,
+	151 
+);
+
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id  
+) values(
+	014 ,
+	"Dell" ,
+	152 
+);
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id  
+) values( 
+	015,
+	"Asus" ,
+	153 
+);
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id  
+) values( 
+	016 ,
+	"Lenovo",
+	154 
+);
+
+
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id 
+) values(
+	017 ,
+	"Philips",
+	191 
+);
+
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id 
+) values(
+	018 ,
+	"Lotus Herbals" ,
+	192 
+);
+
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id
+) values(
+	019 ,
+	"Dove" ,
+	193 
+);
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id  
+) values( 
+	020 ,
+	"Clinique",
+	194 
+);
+
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id  
+) values( 
+	021 ,
+	"Nike" ,
+	111
+);
+
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id  
+) values(
+	022 ,
+	"Puma" ,
+	112
+);
+
+Insert into vendor( 
+	vendor_id ,
+	vendor_name ,
+	product_id
+) values( 
+	023 ,
+        "Skechers" ,
+	113
+);
+
+Insert into coupons(coupon_id,valid_start_date,valid_end_date,coupon_amount)values(3,'2012-04-01','2012-04-17',50);
+Insert into coupons(coupon_id,valid_start_date,valid_end_date,coupon_amount)values(4,'2022-04-22','2022-05-27',12);
+
+Insert into reward_info(reward_id,amount_reward,expiry_date)values(1,12,'2024-12-12') ;
+Insert into reward_info(reward_id,amount_reward,expiry_date)values(2,10,'2024-12-12') ;
+Insert into reward_info(reward_id,amount_reward,expiry_date)values(3,13,'2024-12-12') ;
+Insert into user_rewards(email_id,reward_id)values("DemoData@gmail.com",1);
+Insert into user_rewards(email_id,reward_id)values("projectDemo@gmail.com",2);
+
