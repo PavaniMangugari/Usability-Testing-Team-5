@@ -64,9 +64,41 @@
     <button (click)="viewCart()" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
      <mat-icon>shopping_cart</mat-icon>
    </button>
-   <button (click)="logOut()" mat-icon-button>
-    <mat-icon>logout</mat-icon>
-   </button>
+
+
+   
+
+<button mat-icon-button  (click)="openPopup()">
+  <mat-icon>logout</mat-icon>
+ </button>
+<div
+  class="modal"
+  tabindex="-1"
+  role="dialog"
+  [ngStyle]="{'display':displayStyle}">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Confirmation</h4>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure that you want to logout of the website??</p>
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" 
+        (click)="closePopup()">
+  No
+</button>
+        <button type="button" class="btn btn-danger" 
+                (click)="logOut()">
+          Yes
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
   </mat-toolbar>
   </p>
   

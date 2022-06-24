@@ -29,8 +29,9 @@ export class HeaderComponent implements OnInit {
   options: string[] = ['One', 'Two', 'Three'];
   filteredOptions: Observable<string[]>;
   constructor(private route: ActivatedRoute, private router: Router) { }
-
+  displayStyle = "none";
   ngOnInit(): void {
+  
     this.filteredOptions = this.myControl.valueChanges.pipe(
       startWith(''),
       map(value => this._filter(value)),
@@ -63,8 +64,19 @@ export class HeaderComponent implements OnInit {
   }
 logOut()
 {
+
+
+
+
 localStorage.setItem('userId','');
 this.router.navigate(['/login']);
+// alert("You have successfully loggedout");
+}
+openPopup() {
+  this.displayStyle = "block";
+}
+closePopup() {
+  this.displayStyle = "none";
 }
   
 }
