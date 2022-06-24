@@ -4,19 +4,20 @@
 <br>
 <div class="container" id="product-section">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
       <img src='{{ "assets/images/" +mobileDetails.productImage}}'
            alt="Phone Images"
            class="image-responsive" />
     </div>
-    <div class="col-md-6">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>{{mobileDetails.productName}}</h1>
+    <div class="col-md-8">
+      <div>
+        <div>
+          <h1 >{{mobileDetails.productName}}</h1>
         </div>
-        <p class="description">
+        <h3 class="description">
           {{mobileDetails.productDescription}}
-        </p>
+        </h3>
+        <br>
         <div class="col-md-4">
           <span *ngFor="let rating of [].constructor(mobileDetails.product_rating)">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -25,6 +26,7 @@
           </span>
         </div>
       </div>
+      <br>
       <div class="row">
         <div class="col-md-12 bottom-rule">
           <h2 class="product-price">${{mobileDetails.product_price}}</h2>
@@ -41,7 +43,7 @@
             </div>
         </div>
       </div><!-- end row -->
-
+<br>
       <div class="row add-to-cart">
         <div class="col-md-5 product-qty">
           <button type="button" class="btn btn-secondary" style="margin-right:2%" (click)="changeCount(1)">+</button>
