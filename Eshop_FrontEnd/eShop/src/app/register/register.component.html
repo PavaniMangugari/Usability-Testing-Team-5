@@ -105,20 +105,21 @@ fxLayoutGap.gt-md="50px" fxLayoutAlign="space-around center">
             <mat-error *ngIf="this.registrationForm.controls['emailId'].invalid">Emailid is required</mat-error>
             <mat-icon matSuffix>email</mat-icon>
           </mat-form-field>
+          
 
           <mat-form-field  appearance="fill">
-            <input matInput type="password" formControlName="password" required placeholder="Password"  minlength="6" maxlength="50">
-            <mat-error *ngIf="this.registrationForm.controls['password'].hasError('required')">password is required</mat-error>
-                <mat-error
-                *ngIf="this.registrationForm.controls['password'].hasError('required')">
-                Password must be of length 8
-              </mat-error>
+            <input matInput type="password" formControlName="password" required placeholder="Password"  minlength="6" maxlength="16">
+            <mat-error *ngIf="this.registrationForm.controls['password'].hasError('required')">Password is
+                required</mat-error>
+            <mat-error *ngIf="this.registrationForm.controls['password'].hasError('minlength')">Password should
+               be between 8-16 characters</mat-error>
+                
             <mat-icon matSuffix>lock</mat-icon>
 
           </mat-form-field>
 
           <mat-form-field   appearance="fill">
-            <input matInput type="password" formControlName="repassword" required placeholder="Confirm Password"  minlength="6" maxlength="50">
+            <input matInput type="password" formControlName="repassword" required placeholder="Confirm Password"  minlength="6" maxlength="16">
             <mat-error *ngIf="this.registrationForm.controls['repassword'].hasError('required')">Renter the password</mat-error>
              <mat-icon matSuffix>lock</mat-icon>
           </mat-form-field>

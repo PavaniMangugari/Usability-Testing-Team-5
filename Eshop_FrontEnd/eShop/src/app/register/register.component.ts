@@ -23,8 +23,11 @@ export class RegisterComponent implements OnInit {
       emailId: [''],
       firstName: [''],
        lastName: [''],
-        password: [''],
-        repassword: [''],
+        // password: [''],
+        // repassword: [''],
+        password: ['', [Validators.required, Validators.minLength(8), Validators.maxLength(16)
+        ]],
+        repassword: ['', [Validators.required, Validators.maxLength(16)]],
         phoneNumber: ['']
 
     });
